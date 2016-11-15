@@ -20,7 +20,7 @@ class LocationsController < ApplicationController
     #Only keep the ones that are near buy
 
     @buses.select! do |bus|
-      is_nearby?(@location.latitude, @location.longitude,b but["LATITUDE"], bus["LONGITUDE"])
+      is_nearby?(@location.latitude, @location.longitude, bus["LATITUDE"], bus["LONGITUDE"])
     end
   end
 

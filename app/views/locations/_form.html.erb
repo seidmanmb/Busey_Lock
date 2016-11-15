@@ -13,20 +13,14 @@
 
   <div class="field">
     <%= f.label :street_address %><br>
-    <%= f.text_field :street_address %>
+    <%= f.text_field :street_address, class: 'form-control' %>
   </div>
+
   <div class="field">
     <%= f.label :city %><br>
-    <%= f.text_field :city %>
+    <%= f.text_field :city, class: 'form-control' %>
   </div>
-  <div class="field">
-    <%= f.label :lattitude %><br>
-    <%= f.text_field :lattitude %>
-  </div>
-  <div class="field">
-    <%= f.label :longitude %><br>
-    <%= f.text_field :longitude %>
-  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
